@@ -66,4 +66,3 @@ public class SudokuFrame extends JFrame {
         return button;
     }
 }
-

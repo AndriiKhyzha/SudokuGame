@@ -41,7 +41,7 @@ public class SquareCellListener implements ActionListener {
             Component [] array;
             array = jPanel.getComponents();
             for (int i = 0; i < array.length; i++){
-                if (!array[i].getBackground().equals(defaultColor)){
+                if ((!array[i].getBackground().equals(defaultColor)) ^ (array[i].getBackground().equals(Color.RED))) {
                     return;
                 }
             }

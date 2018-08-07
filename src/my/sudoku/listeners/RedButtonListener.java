@@ -19,7 +19,6 @@ public class RedButtonListener implements ActionListener {
                 if (buttonpanel1[i][j].getBackground().equals(Color.GREEN)) {
                     buttonpanel1[i][j].setBackground(Color.RED);
                 } else if (buttonpanel1[i][j].getBackground().equals(Color.RED)){
-                    buttonpanel1[i][j].setBackground(Color.GREEN);
                 }
             }
         }
