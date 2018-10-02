@@ -20,6 +20,10 @@ public class NumberButtonListener implements ActionListener {
 
                 if (buttonsMatrix[i][j].getBackground().equals(Color.GREEN)) {
                     buttonsMatrix[i][j].setText(jButton.getText());
+
+                    if ((buttonsMatrix[i][j].getBackground().equals(Color.RED))) {
+                        buttonsMatrix[i][j].setText(jButton.getText());
+                    }
                 }
             }
         }

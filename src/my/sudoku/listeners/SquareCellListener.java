@@ -32,7 +32,7 @@ public class SquareCellListener implements ActionListener {
         Cell cell = cellsMatrix[cell_i][cell_j];
         boolean isCellVisible = cell.getIsVisible();
 
-        if (Color.GREEN.equals(color) || isCellVisible){
+        if (Color.GREEN.equals(color) || isCellVisible ){
             button.setBackground(null);
         } else {
             Container container = button.getParent();
@@ -41,7 +41,7 @@ public class SquareCellListener implements ActionListener {
             Component [] array;
             array = jPanel.getComponents();
             for (int i = 0; i < array.length; i++){
-                if ((!array[i].getBackground().equals(defaultColor)) ^ (array[i].getBackground().equals(Color.RED))) {
+                if ((!array[i].getBackground().equals(defaultColor)) ^ (array[i].getBackground().equals(Color.RED)) ^ (array[i].getBackground().equals(Color.BLACK))) {
                     return;
                 }
             }
