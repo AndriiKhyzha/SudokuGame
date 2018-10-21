@@ -1,9 +1,6 @@
 package my.sudoku.listeners;
-
-import my.sudoku.gui.frames.SudokuFrame;
 import my.sudoku.logic.LogicMain;
 import my.sudoku.main.SudokuGame;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,9 +9,7 @@ import java.awt.event.ActionListener;
 public class CButtonListener implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
-        final ActionListener actionListener = new CButtonListener();
-        JButton jButton = (JButton) e.getSource();
-        jButton.getParent();
+
         LogicMain logicMain = SudokuGame.logicMain;
         JButton [][] buttonMatrix = logicMain.getMatrixButtonCells();
 

@@ -1,5 +1,4 @@
 package my.sudoku.listeners;
-
 import my.sudoku.logic.LogicMain;
 import my.sudoku.main.SudokuGame;
 import javax.swing.*;
@@ -11,7 +10,6 @@ public class NumberButtonListener implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         JButton jButton = (JButton) e.getSource();
-        jButton.getParent();
         LogicMain logicMain = SudokuGame.logicMain;
         JButton[][] buttonsMatrix = logicMain.getMatrixButtonCells();
 

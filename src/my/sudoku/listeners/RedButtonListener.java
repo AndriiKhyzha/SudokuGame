@@ -1,5 +1,4 @@
 package my.sudoku.listeners;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -18,7 +17,6 @@ public class RedButtonListener implements ActionListener {
             for (int j = 0; j < buttonpanel1.length; j++) {
                 if (buttonpanel1[i][j].getBackground().equals(Color.GREEN) || buttonpanel1[i][j].getBackground().equals(Color.BLACK)) {
                     buttonpanel1[i][j].setBackground(Color.RED);
-                } else if (buttonpanel1[i][j].getBackground().equals(Color.RED)){
                 }
             }
         }
