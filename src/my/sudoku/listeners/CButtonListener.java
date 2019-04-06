@@ -11,20 +11,15 @@ public class CButtonListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         LogicMain logicMain = SudokuGame.logicMain;
-        JButton [][] buttonMatrix = logicMain.getMatrixButtonCells();
+        JButton[][] buttonMatrix = logicMain.getMatrixButtonCells();
 
-        for (int i = 0; i < buttonMatrix.length; i++){
-            for (int j = 0; j < buttonMatrix.length; j++){
-                if (buttonMatrix [i][j].getBackground().equals(Color.GREEN)) {
-                    buttonMatrix [i][j].setText("");
-                    if (buttonMatrix [i][j].getBackground().equals(Color.RED)) {
-                        buttonMatrix [i][j].setText("");
-                    }
+        for (int i = 0; i < buttonMatrix.length; i++) {
+            for (int j = 0; j < buttonMatrix.length; j++) {
+                if (buttonMatrix[i][j].getBackground().equals(Color.GREEN) || (buttonMatrix[i][j].getBackground().equals(Color.RED)) || (buttonMatrix[i][j].getBackground().equals(Color.BLACK))) {
+                    buttonMatrix[i][j].setText("");
+                    
                 }
             }
         }
-
-
-
     }
 }
